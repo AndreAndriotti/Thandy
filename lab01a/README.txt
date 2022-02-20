@@ -2,14 +2,14 @@
 
 >>> Como compilar o programa na plataforma disponibilizada
 
-    Acesse a pasta Thandy/lab01.
+    Acesse a pasta Thandy/lab01a.
     Para compilar o programa, utilizamos o gcc. 
 
-        $ gcc lab01.c -o lab01
+        $ gcc lab01a.c -o lab01a
 
 >>> Como executar o programa
 
-    $ ./lab01
+    $ ./lab01a
 
 
 >>> Como comprovar que os resultados propostos foram alcançados.
