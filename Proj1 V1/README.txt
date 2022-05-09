@@ -21,4 +21,7 @@
     Hello from thread 1 of 5 -> sum = 4.279
     Hello from thread 4 of 5 -> sum = 5.187
     ln(100) = 5.187
-    SpeedUp (5 threads): 0.0396
+    Tempo serial: 0.004s
+    Tempo paralelo: 0.002s
+    SpeedUp (serial): 1
+    SpeedUp (5 threads): 2
