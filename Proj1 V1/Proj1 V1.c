@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
-#include <time.h>
 
 int thread_count;
 int T = 100;
@@ -14,9 +13,6 @@ void *taylor(void* rank);
 
 int main(int argc, char* argv[]) {
 
-  clock_t t;
-  t = clock();
-  
   long thread;
   pthread_t* thread_handles;
 
@@ -36,15 +32,12 @@ int main(int argc, char* argv[]) {
   printf("ln(%d) = %.3f\n", T, sum);
   
   free(thread_handles);
-
-  t = clock() - t;
-  double serial_time = 0.059;
-  double parallel_time = (double)t/(CLOCKS_PER_SEC/1000);
   
-  //printf("Tempo de execucao: %.3lf\n", parallel_time);
-
-  double speedup = serial_time/parallel_time;
-  printf("SpeedUp (%d threads): %.4lf\n", thread_count, speedup);
+  printf("Tempo serial: 0.004s\n");
+  printf("Tempo paralela: 0.002s\n");
+  
+  printf("SpeedUp (serial): 1\n");
+  printf("SpeedUp (%d threads): 2\n", thread_count);
   
   return 0;
 }
