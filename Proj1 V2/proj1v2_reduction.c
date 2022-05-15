@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
   double global_result = 0.0;
   int thread_count;
 
-	thread_count = strtol(argv[1], NULL, 10);
+  thread_count = strtol(argv[1], NULL, 10);
 
 # pragma omp parallel for num_threads(thread_count) \
     reduction(+: global_result)
@@ -25,12 +25,6 @@ int main(int argc, char* argv[]) {
   }
  
   printf("ln(%ld) = %.3f\n", T, global_result);
-
-  printf("Tempo serial: 0m31,207s\n");
-  printf("Tempo paralela: 0m7,281\n");
-  
-  printf("SpeedUp (serial): 1\n");
-  printf("SpeedUp (%d threads): 4,2861 <- melhor speedup\n", thread_count);
   
   return 0;
 }
