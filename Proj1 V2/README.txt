@@ -22,16 +22,8 @@
     Hello from thread 1 of 5 -> sum = 0.693
     Hello from thread 4 of 5 -> sum = inf
     ln(10000000000) = inf
-    Tempo serial: 0m31,207s
-    Tempo paralelo: 0m9,126s
-    SpeedUp (serial): 1
-    SpeedUp (5 threads): 3.4196
     
     
     Execução do código 2:
 
     ln(10000000000) = 23.603
-    Tempo serial: 0m31,207s
-    Tempo paralela: 0m7,281
-    SpeedUp (serial): 1
-    SpeedUp (5 threads): 4,2861 <- melhor speedup
