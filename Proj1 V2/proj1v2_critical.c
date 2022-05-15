@@ -14,18 +14,12 @@ int main(int argc, char* argv[]) {
   double global_result = 0.0;
   int thread_count;
 
-	thread_count = strtol(argv[1], NULL, 10);
+  thread_count = strtol(argv[1], NULL, 10);
 
 # pragma omp parallel num_threads(thread_count)
   taylor(&global_result);
   
   printf("ln(%ld) = %.3f\n", T, global_result);
-
-  printf("Tempo serial: 0m31,207s\n");
-  printf("Tempo paralelo: 0m9,126s\n");
-  
-  printf("SpeedUp (serial): 1\n");
-  printf("SpeedUp (%d threads): 3.4196\n", thread_count);
   
   return 0;
 }
