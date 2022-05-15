@@ -1,0 +1,27 @@
+>>> Para calcular o SpeedUp dos programas, utilizamos a seguinte fórmula:
+
+    SpeedUp = Tempo serial / Tempo paralelo
+
+
+>>> Para calcular o Tempo de execução dos programas, utilizamos a função time:
+
+    Versão serial:
+
+    $ time ./nome_do_programa
+
+    Versão paralela:
+
+    $ time ./nome_do_programa qtd_de_threads
+
+
+>>> Resultados:
+
+Qtd de threads = 5
+
+Tempo serial: 0m31,207s
+Tempo paralelo (critical): 0m9,126s
+Tempo paralelo (reduction): 0m7,281s
+
+SpeedUp serial: 1
+SpeedUp paralelo (critical): 3,4196
+SpeedUp paralelo (reduction): 4,2861 <- melhor SpeedUp
