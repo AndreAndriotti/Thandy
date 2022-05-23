@@ -23,6 +23,23 @@
     $ time ./proj1vf 6
 
 
+>>> O cálculo do SpeedUp foi realizado com T = 10^10, nas versões serial e paralelas (com critical e reduction):
+
+    Obs: Estas versões podem ser encontradas na pasta Thandy/Proj1 V2.
+    
+    T = 10^10
+
+    Tempo serial: 0m31,207s
+    Tempo paralelo (critical): 0m9,126s
+    Tempo paralelo (reduction): 0m7,281s
+
+    SpeedUp serial: 1
+    SpeedUp paralelo (critical): 3,4196
+    SpeedUp paralelo (reduction): 4,2861 <- melhor SpeedUp
+    
+    Portanto, os resultados abaixo foram gerados com o programa paralelo com reduction.
+
+
 >>> Resultados:
 
     Qtd de threads = 6
