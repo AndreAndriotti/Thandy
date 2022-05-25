@@ -8,8 +8,6 @@
 
 long int T = 10000000000000;
 
-double taylor(double* global_result);
-
 int main(int argc, char* argv[]) {
 
   double global_result = 0.0;
